@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVC_PRoject.Models;
-
+using MVC_PRoject.ViewModels;
 
 namespace MVC_PRoject.Controllers
 {
@@ -14,29 +14,37 @@ namespace MVC_PRoject.Controllers
         public ActionResult Random()
         {
             var movie = new Movie() { Name = "Shrek!" };
+            var customers = new List<Customer>
+            {
+                new Customer { Name ="Customer 1" },
+                new Customer { Name ="Customer 2" }
+            };
 
-            return View(movie);
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            return View(viewModel);
         }
+        
 
-        public ActionResult Edit(int id)
+        public ActionResult Index ()
         {
-            return Content("Id:" + id);
+            var movies = GetMovies();
+
+            return View(movies);
         }
 
-        public ActionResult Index (int? pageindex,string sortBy)
+        private IEnumerable<Movie> GetMovies()
         {
-            if (!pageindex.HasValue)
-                pageindex = 1;
-            if (string.IsNullOrWhiteSpace(sortBy))
-                sortBy = "Name";
-
-            return Content(String.Format("PageIndex ={0}&sortBy={1}", pageindex, sortBy));
+            return new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Shrek" },
+                new Movie { Id = 2, Name = "Avengers" }
+            };
         }
-
-        [Route("movie/released/{year}/{month:range(1,12):regex(\\d{2})}")]
-        public ActionResult ByReleaseDate(int year,int month)
-        {
-            return Content(""+year +"/"+month);
-        }
+        
     }
 }
