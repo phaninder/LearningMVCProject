@@ -1,0 +1,15 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+	<h5> View Data</h5>
+	@{
+		var emp = ViewBag.Emp;//(MVCApp3.Models.Employee)ViewData["Emp"];
+	}
+	<p>Emp Id:@emp.EmployeeId</p>
+	<p>Emp Name:@emp.EmpName</p>
+	<p>Emp Salary:@emp.Salary</p>
+</body>
+</html>
