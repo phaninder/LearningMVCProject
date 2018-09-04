@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVCApp3.Models;
+using MVCApp3.Filters;
 
 namespace MVCApp3.Controllers
 {
@@ -12,13 +13,14 @@ namespace MVCApp3.Controllers
         // GET: Home
         public ActionResult Index()
         {
+			//throw new Exception("Some Error");
 			Employee emp = new Employee()
 			{
 				EmployeeId = 123,
 				EmpName = "P",
 				Salary = 200000
 			};
-			ControllerContext.HttpContext.Cache.Insert("emp", emp, null, DateTime.Now.AddMinutes(2), TimeSpan.Zero);
+			//ControllerContext.HttpContext.Cache.Insert("emp", emp, null, DateTime.Now.AddMinutes(2), TimeSpan.Zero);
 			//ViewData["Emp"] = emp;
 			//ViewBag.Emp = emp;
 			return View();

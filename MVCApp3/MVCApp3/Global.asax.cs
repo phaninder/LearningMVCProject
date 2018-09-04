@@ -10,8 +10,9 @@ namespace MVCApp3
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
-        {
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+		{
+			FilterConfig.RegisterGlobalFilter(GlobalFilters.Filters);
+			RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }
 }
