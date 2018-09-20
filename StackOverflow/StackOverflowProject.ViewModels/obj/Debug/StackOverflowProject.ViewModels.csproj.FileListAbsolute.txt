@@ -1,0 +1,6 @@
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\bin\Debug\StackOverflowProject.ViewModels.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\bin\Debug\StackOverflowProject.ViewModels.pdb
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.csprojAssemblyReference.cache
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.csproj.CoreCompileInputs.cache
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ViewModels\obj\Debug\StackOverflowProject.ViewModels.pdb

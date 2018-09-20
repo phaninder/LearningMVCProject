@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+	<div>
+		<h4> Create Employee</h4>
+		<form action="/Home/Create" method="post">
+			Emp ID: <input type="text" name="EmpId" /><br />
+			Emp Name: <input type="text" name="EmpName" /><br />
+			Salary: <input type="text" name="Salary" /><br />
+			Job   : <input type="text" name="Job"/><br/>
+			Dept No:
+			<select name="DeptId">
+				@foreach (var item in ViewBag.Departments)
+				{
+					<option value="@item.DeptId">@item.DepName</option>
+				}
+			</select>
+			<br />
+			<input type="submit" value="Create" />
+		</form>
+	</div>
+</body>
+</html>

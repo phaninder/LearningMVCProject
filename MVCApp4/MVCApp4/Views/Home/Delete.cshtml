@@ -1,0 +1,20 @@
+﻿@model MVCApp4.Models.Employee
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+	<h4> Delete</h4>
+    <div> 
+		<h4> Are you sure you want to delete employee?</h4>
+		<p>@Model.EmpName</p>
+		<p>@Model.Salary</p>
+		<p>@Model.Job</p>
+		<form action="/Home/Delete/@Model.EmpId" method="post">
+			<input type="submit" value="Delete" />
+		</form>
+		<br/> <a href="/Home/Index">Back to Employees</a>
+    </div>
+</body>
+</html>

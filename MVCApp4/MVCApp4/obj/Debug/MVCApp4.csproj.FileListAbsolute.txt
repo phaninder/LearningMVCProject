@@ -67,3 +67,7 @@ E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\obj\Debug\MVCApp4.cs
 E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\obj\Debug\MVCApp4.csproj.CopyComplete
 E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\obj\Debug\MVCApp4.dll
 E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\obj\Debug\MVCApp4.pdb
+E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\bin\EntityFramework.dll
+E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\bin\EntityFramework.SqlServer.dll
+E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\bin\EntityFramework.xml
+E:\Learning Projects\MVC\LearningMVCProject\MVCApp4\MVCApp4\bin\EntityFramework.SqlServer.xml

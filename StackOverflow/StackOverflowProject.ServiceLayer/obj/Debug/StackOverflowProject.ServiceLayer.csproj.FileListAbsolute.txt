@@ -1,0 +1,12 @@
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\StackOverflowProject.ServiceLayer.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\StackOverflowProject.ServiceLayer.pdb
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\StackOverflowProjectDomainModels.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\EntityFramework.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\StackOverflowProjectDomainModels.pdb
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\StackOverflowProjectDomainModels.dll.config
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\bin\Debug\EntityFramework.xml
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\obj\Debug\StackOverflowProject.ServiceLayer.csprojAssemblyReference.cache
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\obj\Debug\StackOverflowProject.ServiceLayer.csproj.CoreCompileInputs.cache
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\obj\Debug\StackOverflowProject.ServiceLayer.csproj.CopyComplete
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\obj\Debug\StackOverflowProject.ServiceLayer.dll
+E:\Learning Projects\MVC\LearningMVCProject\StackOverflow\StackOverflowProject.ServiceLayer\obj\Debug\StackOverflowProject.ServiceLayer.pdb

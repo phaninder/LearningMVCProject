@@ -1,0 +1,27 @@
+﻿@model List<MVCApp4.Models.Department>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowDepartments</title>
+</head>
+<body>
+	<div>
+		<p> Departments</p>
+		<table>
+			<tr>
+				<th>DeptID</th>
+				<th>DeptName</th>
+				<th>Location</th>
+			</tr>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.DeptId </td>
+					<td>@item.DepName </td>
+					<td>@item.Loc</td>
+				</tr>
+			}
+		</table>
+	</div>
+</body>
+</html>

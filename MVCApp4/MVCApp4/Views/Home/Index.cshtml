@@ -1,11 +1,40 @@
-﻿<html>
+﻿@model List<MVCApp4.Models.Employee>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
 </head>
 <body>
-    <div> 
-		<p> Index</p>
-    </div>
+	<div>
+		<p> Employees</p>
+		<table border="1">
+			<tr>
+				<th>EmpID</th>
+				<th>EmpName</th>
+				<th>EmpSalary</th>
+				<th>EmpJob</th>
+				<th>DeptId</th>
+				<th>DeptName</th>
+				<th>DeptLoc</th>
+				<th></th>
+				<th></th>
+			</tr>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.EmpId </td>
+					<td>@item.EmpName </td>
+					<td>@item.Salary</td>
+					<td>@item.Job</td>
+					<td>@item.DeptId</td>
+					<td>@item.Dept.DepName</td>
+					<td>@item.Dept.Loc</td>
+					<td><a href="/Home/Edit/@item.EmpId">Edit</a></td>
+					<td><a href="/Home/Delete/@item.EmpId">Delete</a></td>
+				</tr>
+			}
+		</table>
+	</div>
+	<a href="/Home/Create">Create Employee</a>
 </body>
 </html>

@@ -1,0 +1,35 @@
+﻿@model MVCApp4.Models.Employee
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+	<p>Edit</p>
+    <div> 
+		<form action="/Home/Edit/@Model.EmpId" method="post">
+			Emp ID : @Model.EmpId<br />
+			Emp Name:<input type="text" name="EmpName" value="@Model.EmpName" /><br />
+			Job:<input type="text" name="Job" value="@Model.Job" /><br />
+			Salary:<input type="text" name="Salary" value="@Model.Salary" /><br />
+			Dept ID:
+			<select name="DeptId">
+				@foreach (var item in ViewBag.Departments)
+				{
+					if (item.DeptId == Model.DeptId)
+					{
+						<option value="@item.DeptId" selected="selected">@item.DepName</option>
+					}
+					else
+					{
+						<option value="@item.DeptId">@item.DepName</option>
+					}
+				}
+			</select>
+			<br />
+			<input type="submit" value="Update" />
+		</form>
+		<br/><a href="/Home/Index">Back to main page</a>
+    </div>
+</body>
+</html>

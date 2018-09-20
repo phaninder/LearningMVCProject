@@ -1,0 +1,35 @@
+﻿@model List<MVCApp4.Models.CombinedTable>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CombinedResult</title>
+</head>
+<body>
+	<div>
+		<p> Employees</p>
+		<table>
+			<tr>
+				<th>EmpID</th>
+				<th>EmpName</th>
+				<th>Salary</th>
+				<th>Job</th>
+				<th>DeptID</th>
+				<th>DeptName</th>
+				<th>Location</th>
+			</tr>
+			@foreach (var item in Model)
+			{
+			<tr>
+				<td>@item.EmpId </td>
+				<td>@item.EmpName </td>
+				<td>@item.Salary</td>
+				<td>@item.Job</td>
+				<td>@item.DeptId </td>
+				<td>@item.DepName </td>
+				<td>@item.Loc</td>
+			</tr>
+			}
+		</table>
+	</div>
+</body>
+</html>
